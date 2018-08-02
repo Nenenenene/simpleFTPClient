@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/file_name"
+        android:text="none"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"/>
+    <TextView
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="未下载"
+        android:layout_weight="0.2"/>
+    <TextView
+        android:id="@+id/file_size"
+        android:textSize="20dp"
+        android:text="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+</LinearLayout>

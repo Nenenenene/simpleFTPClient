@@ -1,0 +1,6 @@
+<resources>
+    <paths>
+        <files-path path="provider-files" name="files" />
+        <root-path  path="." name="root_path" />
+    </paths>
+</resources>

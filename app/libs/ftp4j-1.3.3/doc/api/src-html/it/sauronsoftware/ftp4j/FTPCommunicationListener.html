@@ -1,0 +1,115 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    /*<a name="line.1"></a>
+<FONT color="green">002</FONT>     * ftp4j - A pure Java FTP client library<a name="line.2"></a>
+<FONT color="green">003</FONT>     * <a name="line.3"></a>
+<FONT color="green">004</FONT>     * Copyright (C) 2008-2009 Carlo Pelliccia (www.sauronsoftware.it)<a name="line.4"></a>
+<FONT color="green">005</FONT>     * <a name="line.5"></a>
+<FONT color="green">006</FONT>     * This program is free software: you can redistribute it and/or modify<a name="line.6"></a>
+<FONT color="green">007</FONT>     * it under the terms of the GNU Lesser General Public License version<a name="line.7"></a>
+<FONT color="green">008</FONT>     * 2.1, as published by the Free Software Foundation.<a name="line.8"></a>
+<FONT color="green">009</FONT>     *<a name="line.9"></a>
+<FONT color="green">010</FONT>     * This program is distributed in the hope that it will be useful,<a name="line.10"></a>
+<FONT color="green">011</FONT>     * but WITHOUT ANY WARRANTY; without even the implied warranty of<a name="line.11"></a>
+<FONT color="green">012</FONT>     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<a name="line.12"></a>
+<FONT color="green">013</FONT>     * GNU General Public License for more details.<a name="line.13"></a>
+<FONT color="green">014</FONT>     *<a name="line.14"></a>
+<FONT color="green">015</FONT>     * You should have received a copy of the GNU Lesser General Public<a name="line.15"></a>
+<FONT color="green">016</FONT>     * License version 2.1 along with this program.<a name="line.16"></a>
+<FONT color="green">017</FONT>     * If not, see &lt;http://www.gnu.org/licenses/&gt;.<a name="line.17"></a>
+<FONT color="green">018</FONT>     */<a name="line.18"></a>
+<FONT color="green">019</FONT>    package it.sauronsoftware.ftp4j;<a name="line.19"></a>
+<FONT color="green">020</FONT>    <a name="line.20"></a>
+<FONT color="green">021</FONT>    /**<a name="line.21"></a>
+<FONT color="green">022</FONT>     * This interface describes how to build objects used to intercept any<a name="line.22"></a>
+<FONT color="green">023</FONT>     * communication between the client and the server. It is useful to catch what<a name="line.23"></a>
+<FONT color="green">024</FONT>     * happens behind. A FTPCommunicationListener can be added to any FTPClient<a name="line.24"></a>
+<FONT color="green">025</FONT>     * object by calling its addCommunicationListener() method.<a name="line.25"></a>
+<FONT color="green">026</FONT>     * <a name="line.26"></a>
+<FONT color="green">027</FONT>     * @author Carlo Pelliccia<a name="line.27"></a>
+<FONT color="green">028</FONT>     * @see FTPClient#addCommunicationListener(FTPCommunicationListener)<a name="line.28"></a>
+<FONT color="green">029</FONT>     */<a name="line.29"></a>
+<FONT color="green">030</FONT>    public interface FTPCommunicationListener {<a name="line.30"></a>
+<FONT color="green">031</FONT>    <a name="line.31"></a>
+<FONT color="green">032</FONT>            /**<a name="line.32"></a>
+<FONT color="green">033</FONT>             * Called every time a telnet statement has been sent over the network to<a name="line.33"></a>
+<FONT color="green">034</FONT>             * the remote FTP server.<a name="line.34"></a>
+<FONT color="green">035</FONT>             * <a name="line.35"></a>
+<FONT color="green">036</FONT>             * @param statement<a name="line.36"></a>
+<FONT color="green">037</FONT>             *            The statement that has been sent.<a name="line.37"></a>
+<FONT color="green">038</FONT>             */<a name="line.38"></a>
+<FONT color="green">039</FONT>            public void sent(String statement);<a name="line.39"></a>
+<FONT color="green">040</FONT>    <a name="line.40"></a>
+<FONT color="green">041</FONT>            /**<a name="line.41"></a>
+<FONT color="green">042</FONT>             * Called every time a telnet statement is received by the client.<a name="line.42"></a>
+<FONT color="green">043</FONT>             * <a name="line.43"></a>
+<FONT color="green">044</FONT>             * @param statement<a name="line.44"></a>
+<FONT color="green">045</FONT>             *            The received statement.<a name="line.45"></a>
+<FONT color="green">046</FONT>             */<a name="line.46"></a>
+<FONT color="green">047</FONT>            public void received(String statement);<a name="line.47"></a>
+<FONT color="green">048</FONT>    <a name="line.48"></a>
+<FONT color="green">049</FONT>    }<a name="line.49"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>
